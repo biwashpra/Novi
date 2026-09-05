@@ -1,10 +1,12 @@
 import { HelloProvider } from "@/components/hello-effect/HelloProvider";
 import Navbar from "@/components/navbar";
+import { HeroSection } from "@/components/sections/Hero";
 
 export default function Home() {
   return (
     <HelloProvider>
       <Navbar />
+      <HeroSection />
       <main className="flex flex-col items-center justify-center min-h-screen gap-6 p-8 pt-24">
         <div className="text-center space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">Welcome to Novi</h1>
