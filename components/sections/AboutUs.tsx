@@ -58,9 +58,7 @@ export function AboutUsSection() {
           <div className="grid gap-8 divide-y divide-border sm:grid-cols-1">
             {principles.map((principle) => (
               <div key={principle.id} className="pt-8 first:pt-0">
-                <h3 className="font-semibold text-foreground">
-                  {principle.title}
-                </h3>
+                <p className="font-semibold text-primary">{principle.title}</p>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                   {principle.description}
                 </p>
