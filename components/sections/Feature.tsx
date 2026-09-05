@@ -63,7 +63,10 @@ const icons: Record<(typeof features)[number]["icon"], LucideIcon> = {
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="mx-auto max-w-6xl px-6 py-10">
+    <section
+      id="features"
+      className="scroll-mt-28 mx-auto max-w-6xl px-6 py-10"
+    >
       <div className="max-w-2xl mb-3">
         <p className="text-sm font-medium tracking-wide text-muted-foreground">
           What Navi holds
