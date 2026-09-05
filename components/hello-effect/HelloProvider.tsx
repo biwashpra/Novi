@@ -4,6 +4,8 @@ import { useSyncExternalStore, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { HelloScreen } from ".";
 
+const HELLO_SESSION_ID = "hasSeenIntro";
+
 // Client-only subscriber that returns true on the client and false during SSR/hydration
 const subscribe = () => () => {};
 const getClientSnapshot = () => true;
@@ -20,13 +22,13 @@ export function HelloProvider({ children }: { children: React.ReactNode }) {
   // 2. Read storage directly on initial mount without cascading state updates
   const [showHello, setShowHello] = useState(() => {
     if (typeof window !== "undefined") {
-      return !sessionStorage.getItem("hasSeenIntro");
+      return !sessionStorage.getItem(HELLO_SESSION_ID);
     }
     return true;
   });
 
   const handleComplete = () => {
-    sessionStorage.setItem("hasSeenIntro", "true");
+    sessionStorage.setItem(HELLO_SESSION_ID, "true");
     setShowHello(false);
   };
 
