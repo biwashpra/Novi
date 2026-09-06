@@ -69,7 +69,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full z-50">
+      <header className="fixed top-0 left-0 w-full z-30">
         <div className="max-w-7xl mx-auto w-full px-4 py-4 sm:px-6">
           <nav
             className={cn(
