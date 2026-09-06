@@ -29,7 +29,7 @@ export function HowItWorksSection() {
   return (
     <section
       id="how-it-works"
-      className="scroll-mt-28 mx-auto max-w-6xl px-6 py-10"
+      className="scroll-mt-24 mx-auto max-w-6xl px-6 py-10"
     >
       <div className="max-w-2xl mb-3">
         <p className="text-sm font-medium tracking-wide text-muted-foreground">
