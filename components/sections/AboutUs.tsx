@@ -36,7 +36,7 @@ export const aboutCopy = {
 
 export function AboutUsSection() {
   return (
-    <section id="about-us" className="scroll-mt-28 px-4 py-10 sm:px-6 sm:py-28">
+    <section id="about-us" className="scroll-mt-24 px-4 py-10 sm:px-6 sm:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>

@@ -5,7 +5,7 @@ import { FullProduct } from "./FullProduct";
 
 export default function ProductScroll() {
   return (
-    <section id="product">
+    <section id="product" className="scroll-mt-24">
       <div className="flex flex-col overflow-hidden">
         <ContainerScroll
           titleComponent={
