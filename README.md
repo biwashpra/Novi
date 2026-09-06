@@ -155,6 +155,7 @@ novi/
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Zod Documentation](https://zod.dev/)
 - [React Hook Form Documentation](https://react-hook-form.com/)
+- [Motion - formally framer-motion](https://motion.dev/)
 
 ## 🤝 Contributing
  
