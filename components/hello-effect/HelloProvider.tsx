@@ -3,6 +3,7 @@
 import { useSyncExternalStore, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { HelloScreen } from ".";
+import { Spinner } from "../ui/spinner";
 
 const HELLO_SESSION_ID = "hasSeenIntro";
 
@@ -34,7 +35,11 @@ export function HelloProvider({ children }: { children: React.ReactNode }) {
 
   // Skip rendering overlay entirely during SSR / initial hydration pass
   if (!isMounted) {
-    return <>{children}</>;
+    return (
+      <div className="flex h-screen items-center justify-center">
+        <Spinner className="size-8" />
+      </div>
+    )
   }
 
   return (
