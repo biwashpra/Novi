@@ -4,11 +4,11 @@ import { InfiniteSlider } from "../ui/infinite-slider";
 export function LogoCloud() {
   return (
     <section className="mx-auto max-w-7xl">
-      <h2 className="mb-5 text-center font-medium text-foreground text-xl tracking-tight md:text-3xl">
+      <p className="mb-5 text-center font-medium text-foreground text-xl tracking-tight md:text-3xl">
         <span className="text-muted-foreground">Trusted by experts.</span>
         <br />
         <span className="font-semibold">Used by the leaders.</span>
-      </h2>
+      </p>
       <div className="mask-[linear-gradient(to_right,transparent,black,transparent)] mx-auto my-5 h-px max-w-sm bg-border" />
       <div className="mask-[linear-gradient(to_right,transparent,black,transparent)] overflow-hidden py-4">
         <InfiniteSlider gap={42} reverse speed={80} speedOnHover={25}>

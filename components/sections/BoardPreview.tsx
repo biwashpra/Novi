@@ -1,28 +1,14 @@
 import { cn } from "@/lib/utils";
-
-const columns = [
-  {
-    title: "Backlog",
-    cards: ["Design onboarding flow", "Write launch email"],
-  },
-  {
-    title: "In Progress",
-    cards: ["Ship billing page", "QA mobile nav"],
-  },
-  {
-    title: "Done",
-    cards: ["Set up workspace"],
-  },
-];
+import { productColumns } from "@/lib/content/product";
 
 export function BoardPreview() {
   return (
     <div
-      className="rounded-2xl border border-border bg-card p-4 shadow-2xl shadow-primary/10 sm:p-6"
+      className="rounded-2xl border border-primary bg-card p-4 shadow-2xl shadow-primary/10 sm:p-6"
       aria-hidden="true"
     >
       <div className="grid grid-cols-3 gap-3 sm:gap-4">
-        {columns.map((column, columnIndex) => (
+        {productColumns.map((column, columnIndex) => (
           <div key={column.title} className="flex flex-col gap-2">
             <p className="text-xs font-medium text-muted-foreground">
               {column.title}

@@ -1,68 +1,9 @@
+import {
+  boardCards,
+  boardColumns,
+  threadMessages,
+} from "@/lib/content/product";
 import { Dot, MessageSquare } from "lucide-react";
-
-type ColumnId = "backlog" | "doing" | "review";
-
-export const boardCards = [
-  {
-    id: "research",
-    title: "Draft competitive analysis",
-    column: "backlog" as const,
-    tag: "Research",
-    due: "Mon",
-    initials: "ML",
-    comments: 3,
-  },
-  {
-    id: "design",
-    title: "Wireframe new 'Huddle' view",
-    column: "backlog" as const,
-    tag: "Design",
-    due: "Tue",
-    initials: "BP",
-    comments: 1,
-  },
-  {
-    id: "fe-dev",
-    title: "Build real-time sync gateway",
-    column: "doing" as const,
-    tag: "Eng",
-    due: "Today",
-    initials: "KN",
-    comments: 5,
-  },
-  {
-    id: "review",
-    title: "Finalize onboarding copy",
-    column: "review" as const,
-    tag: "Product",
-    due: "Wed",
-    initials: "BP",
-    comments: 2,
-  },
-] as const;
-
-export const threadMessages = [
-  {
-    id: "m1",
-    name: "Kai",
-    initials: "KN",
-    body: "WebSocket handshake is stable on staging. Latency is hovering around 180ms. Ready for code review.",
-    time: "2h",
-  },
-  {
-    id: "m2",
-    name: "Biwash",
-    initials: "BP",
-    body: "Great work, Kai. I'll run through the integration tests now. If they pass, we can ship it with tomorrow's release.",
-    time: "1h",
-  },
-] as const;
-
-const columns: { id: ColumnId; label: string }[] = [
-  { id: "backlog", label: "Backlog" },
-  { id: "doing", label: "In progress" },
-  { id: "review", label: "Review" },
-];
 
 export function FullProduct() {
   return (
@@ -83,7 +24,7 @@ export function FullProduct() {
 
         <div className="grid gap-0 lg:grid-cols-[1fr_16rem]">
           <div className="grid grid-cols-1 gap-3 p-3 sm:grid-cols-3">
-            {columns.map((column) => {
+            {boardColumns.map((column) => {
               const cards = boardCards.filter(
                 (card) => card.column === column.id,
               );

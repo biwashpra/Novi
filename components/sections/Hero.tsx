@@ -4,8 +4,7 @@ import { BoardPreview } from "./BoardPreview";
 
 export function HeroSection() {
   return (
-    <section className="scroll-mt-24 px-4 pt-36 pb-6 sm:px-6 sm:pt-44 sm:pb-12"
-    >
+    <section className="scroll-mt-24 px-4 pt-36 pb-6 sm:px-6 sm:pt-44 sm:pb-12">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="max-w-xl">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
