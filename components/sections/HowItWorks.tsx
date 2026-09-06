@@ -15,7 +15,7 @@ export function HowItWorksSection() {
           <span className="text-primary">in three steps.</span>
         </h2>
         <p className="mt-2 max-w-xl text-base leading-relaxed text-muted-foreground">
-          Navi is intentionally small. Three moves replace the pile of tabs most
+          Novi is intentionally small. Three moves replace the pile of tabs most
           teams live in.
         </p>
       </div>

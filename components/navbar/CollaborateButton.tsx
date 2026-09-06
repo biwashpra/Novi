@@ -1,9 +1,12 @@
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export const CollaborateButton = ({ className }: { className?: string }) => (
   <Button
+    nativeButton={false}
+    render={<Link href="https://github.com/biwashpra/Novi" target="_blank" />}
     className={cn(
       "relative text-sm font-medium rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden hover:bg-primary/80",
       className,

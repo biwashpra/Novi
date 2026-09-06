@@ -30,7 +30,7 @@ export function FeaturesSection() {
     >
       <div className="max-w-2xl mb-3">
         <p className="text-sm font-medium tracking-wide text-muted-foreground">
-          What Navi holds
+          What Novi holds
         </p>
         <h2 className="mt-1 text-3xl tracking-tight sm:text-4xl">
           One workspace. The rest can close.

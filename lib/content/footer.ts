@@ -34,5 +34,5 @@ export const footerContent = {
       ],
     },
   ],
-  copyright: `© ${new Date().getFullYear()} Navi. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Novi. All rights reserved.`,
 };

@@ -33,7 +33,7 @@ export const features: FeatureItem[] = [
     id: "import",
     title: "Works the way you already do",
     description:
-      "Import from Trello, Asana, or a spreadsheet in minutes. Bring your team's history with you. Navi meets your team where they are, then gets out of the way.",
+      "Import from Trello, Asana, or a spreadsheet in minutes. Bring your team's history with you. Novi meets your team where they are, then gets out of the way.",
     icon: "import",
   },
 ];
