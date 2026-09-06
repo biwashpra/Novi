@@ -1,44 +1,5 @@
 "use client";
 
-export const footerContent = {
-  tagline: "The calm workspace for small, fast-moving teams.",
-  linkGroups: [
-    {
-      title: "Product",
-      links: [
-        { label: "Features", href: "#features" },
-        { label: "How it works", href: "#how-it-works" },
-        { label: "Pricing", href: "#" },
-        { label: "Changelog", href: "#" },
-      ],
-    },
-    {
-      title: "Company",
-      links: [
-        { label: "About us", href: "#about-us" },
-        { label: "Careers", href: "#" },
-        { label: "Contact", href: "#" },
-      ],
-    },
-    {
-      title: "Resources",
-      links: [
-        { label: "Guides", href: "#" },
-        { label: "Community", href: "#" },
-        { label: "Support", href: "#" },
-      ],
-    },
-    {
-      title: "Legal",
-      links: [
-        { label: "Privacy", href: "#" },
-        { label: "Terms", href: "#" },
-      ],
-    },
-  ],
-  copyright: `© ${new Date().getFullYear()} Navi. All rights reserved.`,
-};
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { ArrowUpRight } from "lucide-react";
@@ -52,11 +13,25 @@ import {
   newsletterSchema,
 } from "@/lib/validations/newsletter";
 import { toast } from "@/components/ui/toast";
+import { footerContent } from "@/lib/content/footer";
+import Link from "next/link";
 
 const socialLinks = [
-  { label: "GitHub", href: "#", icon: GithubIcon },
-  { label: "LinkedIn", href: "#", icon: LinkedinIcon },
-  { label: "Twitter", href: "#", icon: TwitterIcon },
+  {
+    label: "GitHub",
+    href: "https://github.com/biwashpra/Novi",
+    icon: GithubIcon,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/biwash-pradhan-6b1575276/",
+    icon: LinkedinIcon,
+  },
+  {
+    label: "Twitter",
+    href: "https://github.com/biwashpra/Novi",
+    icon: TwitterIcon,
+  },
 ];
 
 export function Footer() {
@@ -127,14 +102,15 @@ export function Footer() {
 
             <div className="mt-6 flex gap-3">
               {socialLinks.map(({ label, href, icon: Icon }) => (
-                <a
+                <Link
                   key={label}
                   href={href}
                   aria-label={label}
+                  target="_blank"
                   className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   <Icon size={16} />
-                </a>
+                </Link>
               ))}
             </div>
           </div>

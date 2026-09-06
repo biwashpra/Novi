@@ -6,6 +6,9 @@ importers:
   .:
     configDependencies: {}
     packageManagerDependencies:
+      '@pnpm/exe':
+        specifier: 12.3.2
+        version: 12.3.2
       pnpm:
         specifier: 12.3.2
         version: 12.3.2
@@ -56,6 +59,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@pnpm/exe@12.3.2':
+    resolution: {integrity: sha512-g0o3+NaxRyTFK/IRHB9nAOOdBP6V2/3S7IaxEO1NwYp2idSUvFx9CTA1VYOwPM2MEOyMEITx6UAfpOI37lb7Dg==}
+    engines: {node: '>=18.*'}
+    hasBin: true
+
   pnpm@12.3.2:
     resolution: {integrity: sha512-gvkDUxRkbuqYGt7IXHEaIatfOwVlmz+c6dJwy7k+ig9hTaF5Irrgl5AuK4YO6OttXBp+iSmaFod8DCQ/NrjhWw==}
     engines: {node: '>=18.*'}
@@ -86,6 +94,17 @@ snapshots:
 
   '@pnpm/exe.win32-x64@12.3.2':
     optional: true
+
+  '@pnpm/exe@12.3.2':
+    optionalDependencies:
+      '@pnpm/exe.darwin-arm64': 12.3.2
+      '@pnpm/exe.darwin-x64': 12.3.2
+      '@pnpm/exe.linux-arm64': 12.3.2
+      '@pnpm/exe.linux-arm64-musl': 12.3.2
+      '@pnpm/exe.linux-x64': 12.3.2
+      '@pnpm/exe.linux-x64-musl': 12.3.2
+      '@pnpm/exe.win32-arm64': 12.3.2
+      '@pnpm/exe.win32-x64': 12.3.2
 
   pnpm@12.3.2:
     optionalDependencies:
